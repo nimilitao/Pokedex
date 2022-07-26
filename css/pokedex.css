@@ -1,0 +1,98 @@
+/* colocar fonte quadriculada depois */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, blue, #fff);
+    min-height: 100vh;
+}
+
+main{
+    /* deixa a largura da tag "main" para ficar no tamanho da imagem*/
+    display: inline-block;
+    position: relative;    
+    margin-top: 2%;
+    padding: 15px;
+}
+
+.pokedex{
+    width: 100%; /*o tamanho fica 100% da imagem, e não da tag mãe*/
+    max-width: 425px;
+}
+
+.pokemonImg{
+    position: absolute;
+    bottom: 50%; /*porcentagem em relação à tag main*/
+    left: 53%;
+    transform: translate(-63%, 0);
+    height: 18%;
+}
+
+.pokemonData{
+    position: absolute;
+    font-weight: 600; /*negrito*/
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: Clamp(8px, 5vh, 25px);/*min, desejável, max*/
+}
+
+.pokemonName{
+    color: rgb(89, 89, 89);
+    text-transform: capitalize; /*deixa a primeira letra maiúscula*/
+}
+
+form{
+    position: absolute;
+    background-color: red;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+.inputSearch{
+    width: 100%;
+    padding: 4%;
+    outline: none; /*Não coloca borda ao entrar na caixa de texto*/
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(89, 89, 89);
+    font-size: Clamp(8px, 5vh, 25px);
+    box-shadow: -3px 4px 0 #888, -4.5px 6.5px 0 rgb(34, 34, 34);
+}
+
+#buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;/*espaço entre os itens*/
+
+}
+
+.button{
+    width: 49%;
+    padding: 4%;
+    border: 0.01px solid #000;
+    border-radius: 5px;
+    font-weight: 600;
+    color: rgb(89, 89, 89);
+    font-size: Clamp(8px, 5vh, 25px);
+    color: #fff;
+    background-color: #444;
+    box-shadow: -3px 4px 0 #333, -4.5px 6.5px 0 rgb(32, 32, 32);
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 rgb(32, 32, 32);
+    font-size: 1.5rem;
+}
