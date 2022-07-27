@@ -40,7 +40,7 @@ main{
     color: #aaa;
     top: 54.5%;
     right: 27%;
-    font-size: Clamp(8px, 5vh, 25px);/*min, desejável, max*/
+    font-size: Clamp(4px, 5vh, 25px);/*min, desejável, max*/
 }
 
 .pokemonName{
@@ -50,8 +50,8 @@ main{
 
 form{
     position: absolute;
-    background-color: red;
     width: 65%;
+    height: 10%;
     top: 65%;
     left: 13.5%;
 }
@@ -64,7 +64,7 @@ form{
     border-radius: 5px;
     font-weight: 600;
     color: rgb(89, 89, 89);
-    font-size: Clamp(8px, 5vh, 25px);
+    font-size: Clamp(1px, 5vw, 1rem);
     box-shadow: -3px 4px 0 #888, -4.5px 6.5px 0 rgb(34, 34, 34);
 }
 
@@ -75,7 +75,7 @@ form{
     width: 65%;
     transform: translate(-57%, 0);
     display: flex;
-    gap: 20px;/*espaço entre os itens*/
+    gap: 4%;/*espaço entre os itens*/
 
 }
 
@@ -86,7 +86,7 @@ form{
     border-radius: 5px;
     font-weight: 600;
     color: rgb(89, 89, 89);
-    font-size: Clamp(8px, 5vh, 25px);
+    font-size: Clamp(8px, 5vw, 1rem);
     color: #fff;
     background-color: #444;
     box-shadow: -3px 4px 0 #333, -4.5px 6.5px 0 rgb(32, 32, 32);
