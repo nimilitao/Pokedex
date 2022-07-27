@@ -9,7 +9,7 @@
 
 body{
     text-align: center;
-    background: linear-gradient(to bottom, blue, #fff);
+    background: linear-gradient(to bottom, rgb(0, 119, 255), #fff);
     min-height: 100vh;
 }
 
@@ -40,7 +40,7 @@ main{
     color: #aaa;
     top: 54.5%;
     right: 27%;
-    font-size: Clamp(4px, 5vh, 25px);/*min, desejável, max*/
+    font-size: Clamp(4px, 5vw, 25px);/*min, desejável, max*/
 }
 
 .pokemonName{
@@ -94,5 +94,5 @@ form{
 
 .button:active{
     box-shadow: inset -4px 4px 0 rgb(32, 32, 32);
-    font-size: 1.5rem;
+    font-size: 0.9rem;
 }
