@@ -9,7 +9,7 @@ const btnNext = document.querySelector('.btnNext');
 
 let searchPokemon  =1;
 
-const fetchPokemon = async (pokemon) => {
+const fetchPokemon = async (pokemon) => { // conexão com API e busca dos pokemons
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`); //promise
     console.log(APIResponse);
     
